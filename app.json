@@ -1,125 +1,100 @@
 {
-  "name":"FLASH-MD",
-  "description":"An easy and simple WhatsApp bot developed by France King",
-  "keywords":["bot","node","baileys","whatsapp"],
-  "logo":"https://telegra.ph/file/dfccbf12397757c321ac4.jpg",
-  "repository":"https://github.com/franceking1/Flash-Md",
-  "succes_url":"/",
-  "stack":"container",
-     "env":{
-    "PREFIX":
-    {
-      "description":"choose your prefix of bot",
-      "value":".",
-      "required":true
-    },
-    "AUTO_READ_MESSAGES":
-    {
-      "description":"Put yes if you want the bot to autoread people's messages or else put no", 
-      "value":"no", 
-      "required":false 
-    }, 
-    "AUTO_READ_STATUS":
-    {
-      "description":"Your contact status will be read automatically(type yes to active or no to deactive  ; don't write in capital letter)",
-      "value":"yes",
-      "required":false
-    }, "AUTO_DOWNLOAD_STATUS":
-    {
-      "description":"Your contact status will be download automatically and send to you(type yes to active or no to deactive ; don't write in capital letter)",
-      "value":"yes",
-      "required":false
-    }
-    ,
-     "PM_PERMIT" :
-     {
-      "description":"Other user can't use your bot in pm (type yes to active or no to deactive ; don't write in capital letter)",
-      "value":"no",
-      "required":false
-    }
-    ,
-    "BOT_NAME" : {
-
-      "description":"put A name for your bot",
-      "value":"FLASH-MD",
-      "required":false
-
-    } ,
-     "BOT_MENU_LINKS" : {
-
-      "description":"add one or many link for your bot menu  ; eg : url1,url2,url3.....",
-      "value":"https://telegra.ph/file/dfccbf12397757c321ac4.jpg",
-      "required":false
-
-     },
-    "PUBLIC_MODE":
-    {
-      "description":"type yes to put your bot on public mode or no to put it on private mod",
-      "value":"no",
-      "required":false
-    }
-        ,
-    "HEROKU_API_KEY": {
-    "description": "insert your heroku api-key (this is optionnal)",
-     "required" :false
-    },
-   "HEROKU_APP_NAME": {
-    "description": "insert your heroku APP NAME (this is optionnal)",
-     "required" :false
-    }  
-          ,
-    "SESSION_ID":
-    {
-      "description":"put your session ID, AMKE SURE IT STARTS WITH FLASH-MD-WA-BOT;;;=>",   
-      "value":"",
+  "name": "Ghost",
+  "description": "An easy and simple WhatsApp bot developed by Ghost",
+  "keywords": ["bot", "node", "baileys", "whatsapp"],
+  "logo": "https://telegra.ph/file/eb0b01ecb62eb4b3b9010.jpg",
+  "repository": "https://github.com/CurxptGhxst",
+  "success_url": "/",
+  "stack": "container",
+  "env": {
+    "PREFIX": {
+      "description": "Choose your bot prefix",
+      "value": ".",
       "required": true
-
     },
-    "OWNER_NAME":
-    {
-
-    "desc": "Your Name",
-    "required": false,
-    "value": "France King"
+    "AUTO_READ_MESSAGES": {
+      "description": "Put yes if you want the bot to autoread people's messages or else put no",
+      "value": "no",
+      "required": false
+    },
+    "AUTO_READ_STATUS": {
+      "description": "Your contact status will be read automatically (type yes to activate or no to deactivate)",
+      "value": "yes",
+      "required": false
+    },
+    "AUTO_DOWNLOAD_STATUS": {
+      "description": "Your contact status will be downloaded automatically and sent to you (type yes to activate or no to deactivate)",
+      "value": "yes",
+      "required": false
+    },
+    "PM_PERMIT": {
+      "description": "Other users can't use your bot in private messages (type yes to activate or no to deactivate)",
+      "value": "no",
+      "required": false
+    },
+    "BOT_NAME": {
+      "description": "Put a name for your bot",
+      "value": "Ghost",
+      "required": false
+    },
+    "BOT_MENU_LINKS": {
+      "description": "Add one or many links for your bot menu",
+      "value": "https://telegra.ph/file/eb0b01ecb62eb4b3b9010.jpg",
+      "required": false
+    },
+    "PUBLIC_MODE": {
+      "description": "Type yes to put your bot in public mode or no to put it in private mode",
+      "value": "no",
+      "required": false
+    },
+    "HEROKU_API_KEY": {
+      "description": "Insert your Heroku API key (optional)",
+      "required": false
+    },
+    "HEROKU_APP_NAME": {
+      "description": "Insert your Heroku app name (optional)",
+      "required": false
+    },
+    "SESSION_ID": {
+      "description": "Put your session ID, MAKE SURE IT STARTS WITH Ghost-WA-BOT",
+      "value": "",
+      "required": true
+    },
+    "OWNER_NAME": {
+      "description": "Your Name",
+      "required": false,
+      "value": "Ghost"
+    },
+    "OWNER_NUMBER": {
+      "description": "Your number, don't put '+' and put your area code (example for Togo '228')",
+      "required": false,
+      "value": "351927584128"
+    },
+    "WARN_COUNT": {
+      "description": "This is the limit of warnings for warning commands",
+      "required": false,
+      "value": "3"
+    },
+    "CHAT_BOT": {
+      "description": "Put yes to allow the bot to chat with people who text you or put no if you don't want the bot to chat with people",
+      "required": false,
+      "value": "no"
+    },
+    "STARTING_BOT_MESSAGE": {
+      "description": "If you don't want a starting bot message, put no, else put yes",
+      "required": true,
+      "value": "yes"
+    },
+    "PRESENCE": {
+      "description": "Put online to indicate that you are ever online even if you are not. Put typing to indicate that you are currently typing a message. Put recording to indicate that you are currently recording an audio. Or leave the field blank to indicate your real state.",
+      "value": "",
+      "required": false
+    }
   },
-    "OWNER_NUMBER":
-  {
-
-    "desc": "Your number , dont put '+' and put you area code(exemple of togo '228')",
-    "required":false,
-    "value": "254751284190"
-  },
-    "WARN_COUNT":
-  {
-    "desc": "this is the limit of warn for warning commandes",
-    "required": false,
-    "value": "3"
-  },
-    "CHAT_BOT":
-    {
-      "desc": "Put yes to allow the bot to chat with people who text you or put no if you don't want the bot to chat with people",
-      "required": false, 
-       "value": "no" 
-    }, 
-  "STARTING_BOT_MESSAGE":
-  {
-    "description": "if you don't want startting-bot-message put no else put yes",
-    "required": true,
-    "value": "yes"
-  },
-  "PRESENCE":{
-    "description":"Put online to indicate that you are ever online even if you are not. Put typing to indicate that you are currently typing a message. Put recording to indicate that you are currently recording an audio. Or leave the field blank to indicate your real state.",
-    "value":"",
-    "required": false
-  }  
-  },
-
-
   "buildpacks": [
     {
       "url": "heroku/nodejs"
     },
-
     {
       "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
     },
@@ -127,17 +102,15 @@
       "url": "https://github.com/clhuang/heroku-buildpack-webp-binaries.git"
     }
   ],
-
   "formation": {
-                "worker": {
-                        "quantity": 1,
-                        "size": "basic"
-                }
-        },
-
-  "addons":[
+    "worker": {
+      "quantity": 1,
+      "size": "basic"
+    }
+  },
+  "addons": [
     {
-      "plan":"heroku-postgresql"
+      "plan": "heroku-postgresql"
     }
   ]
-}
+    }
